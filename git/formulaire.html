@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulaire de Contact</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #333;
+      text-align: center;
+    }
+
+    p {
+      color: #666;
+      text-align: center;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="submit"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #009688;
+      color: white;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #008c7b;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Contactez-nous</h2>
+<p>Pour plus d'informations, veuillez laisser vos coordonnées dans ce formulaire</p>
+
+<form action="/envoyer_formulaire" method="post">
+  <label for="nom">Nom :</label>
+  <input type="text" id="nom" name="nom">
+
+  <label for="email">Email :</label>
+  <input type="email" id="email" name="email">
+
+  <label for="subject">Sujet :</label>
+  <input type="text" id="subject" name="subject">
+
+  <input type="submit" value="Envoyer">
+</form>
+
+</body>
+</html>
